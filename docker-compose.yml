@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+
+  app1:
+    build: .
+    image: cloudscalex:latest
+    container_name: app1
+    environment:
+      APP_NAME: Instance-1
+    ports:
+      - "5001:5000"
+
+  app2:
+    image: cloudscalex:latest
+    container_name: app2
+    environment:
+      APP_NAME: Instance-2
+    ports:
+      - "5002:5000"
+
+  app3:
+    image: cloudscalex:latest
+    container_name: app3
+    environment:
+      APP_NAME: Instance-3
+    ports:
+      - "5003:5000"

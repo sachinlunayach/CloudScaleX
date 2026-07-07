@@ -1,24 +1,94 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <title>CloudScaleX</title>
+
+    <link rel="stylesheet"
+
+href="{{ url_for('static',filename='css/style.css') }}">
+
 </head>
 
 <body>
 
+<div class="container">
+
 <h1>CloudScaleX</h1>
 
-<hr>
+<p class="subtitle">
 
-<h2>Hostname</h2>
+Production Ready AWS Infrastructure Demo
 
-<p>{{ hostname }}</p>
+</p>
 
-<hr>
+<div class="status">
 
-<h2>Current Time</h2>
+Application Healthy
 
-<p>{{ current_time }}</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Hostname</h3>
+
+<p>{{hostname}}</p>
+
+</div>
+
+<div class="card">
+
+<h3>Private IP</h3>
+
+<p>{{private_ip}}</p>
+
+</div>
+
+<div class="card">
+
+<h3>CPU Usage</h3>
+
+<p>{{cpu}} %</p>
+
+</div>
+
+<div class="card">
+
+<h3>Memory Usage</h3>
+
+<p>{{memory}} %</p>
+
+</div>
+
+<div class="card">
+
+<h3>Current Time</h3>
+
+<p>{{current_time}}</p>
+
+</div>
+
+<div class="card">
+
+<h3>Refresh Count</h3>
+
+<p>{{refresh}}</p>
+
+</div>
+
+</div>
+
+<footer>
+
+Docker • Flask • AWS • DevOps
+
+</footer>
+
+</div>
 
 </body>
 
